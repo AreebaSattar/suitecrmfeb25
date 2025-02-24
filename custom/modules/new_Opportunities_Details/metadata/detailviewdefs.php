@@ -34,6 +34,10 @@ $viewdefs['new_Opportunities_Details']['DetailView'] = array(
                     'name' => 'amount',
                     'label' => 'LBL_AMOUNT',
                 ),
+                array(
+                    'name' => 'account_name',
+                    'label' => 'LBL_ACCOUNT_NAME',
+                ),
             ),
         ),
     ),

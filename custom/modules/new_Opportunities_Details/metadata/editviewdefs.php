@@ -34,10 +34,10 @@ $viewdefs['new_Opportunities_Details']['EditView'] = array(
                     'name' => 'amount',
                     'label' => 'LBL_AMOUNT',
                 ),
-//                array(
-//                    'name' => 'account_name',
-//                    'label' => 'LBL_ACCOUNT_NAME',
-//                ),
+                array(
+                    'name' => 'account_name',
+                    'label' => 'LBL_ACCOUNT_NAME',
+                ),
             ),
         ),
     ),
