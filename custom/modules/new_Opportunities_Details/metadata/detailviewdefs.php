@@ -15,7 +15,7 @@ $viewdefs['new_Opportunities_Details']['DetailView'] = array(
                     'label' => 'LBL_NAME',
                 ),
                 array(
-                    'name' => 'assigned_user',
+                    'name' => 'assigned_user_name',
                     'label' => 'LBL_ASSIGNED_USER',
                 ),
             ),
@@ -43,6 +43,10 @@ $viewdefs['new_Opportunities_Details']['DetailView'] = array(
                 array(
                     'name' => 'lead_name',
                     'label' => 'LBL_LEAD_NAME',
+                ),
+                array(
+                    'name' => 'new_brand_name',
+                    'label' => 'LBL_NEW_BRAND_NAME',
                 ),
             ),
         ),

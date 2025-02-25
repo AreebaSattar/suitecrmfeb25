@@ -12,16 +12,6 @@ $viewdefs['new_Opportunities_Details']['EditView'] = array(
         'default' => array(
             array(
                 array(
-                    'name' => 'name',
-                    'label' => 'LBL_NAME',
-                ),
-                array(
-                    'name' => 'assigned_user',
-                    'label' => 'LBL_ASSIGNED_USER',
-                ),
-            ),
-            array(
-                array(
                     'name' => 'sales_stage',
                     'label' => 'LBL_SALES_STAGE',
                 ),
@@ -34,10 +24,12 @@ $viewdefs['new_Opportunities_Details']['EditView'] = array(
                 array(
                     'name' => 'account_name',
                     'label' => 'LBL_ACCOUNT_NAME',
+                    'required' => false,
                 ),
                 array(
                     'name' => 'lead_name',
                     'label' => 'LBL_LEAD_NAME',
+                    'required' => false,
                 ),
             ),
             array(
@@ -54,6 +46,7 @@ $viewdefs['new_Opportunities_Details']['EditView'] = array(
                             'probability' => 'probability',
                             'sales_stage' => 'sales_stage',
                             'amount' => 'amount',
+
                         ),
                     ),
                 ),
