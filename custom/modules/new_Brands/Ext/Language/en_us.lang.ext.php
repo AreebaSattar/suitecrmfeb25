@@ -15,3 +15,4 @@ $mod_strings['LBL_STATUS'] = 'Status';
 $mod_strings['LBL_MARKET_REGION'] = 'Market Region';
 $mod_strings['LBL_OPPORTUNITIES'] = 'Opportunities';
 $mod_strings['LBL_ACCOUNTS'] = 'Accounts';
+

@@ -1,7 +1,4 @@
-<?php 
- //WARNING: The contents of this file are auto-generated
-
-
+<?php
 $layout_defs["new_Brands"]["subpanel_setup"]['accounts'] = array(
     'order' => 10,
     'module' => 'Accounts',
@@ -15,5 +12,3 @@ $layout_defs["new_Brands"]["subpanel_setup"]['accounts'] = array(
         array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
     ),
 );
-
-?>
