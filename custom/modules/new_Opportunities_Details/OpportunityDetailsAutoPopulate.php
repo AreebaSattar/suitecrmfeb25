@@ -1,5 +1,6 @@
 <?php
 
+
 if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 class OpportunityDetailsAutoPopulate
@@ -8,12 +9,14 @@ class OpportunityDetailsAutoPopulate
     public function populateFields($bean, $event, $arguments)
     {
 
+
         // Only proceed if we have a related opportunity
         if (!empty($bean->opportunity_id)) {
             // Load the related opportunity
             $opportunity = BeanFactory::getBean('Opportunities', $bean->opportunity_id);
 
             if ($opportunity) {
+
                 $this->generateName($bean);
             }
         }
