@@ -44,6 +44,10 @@ $viewdefs['new_Opportunities_Details']['EditView'] = array(
                     'name' => 'lead_name',
                     'label' => 'LBL_LEAD_NAME',
                 ),
+                array(
+                    'name' => 'new_brand_name',
+                    'label' => 'LBL_NEW_BRAND_NAME',
+                ),
             ),
         ),
     ),
