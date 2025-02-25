@@ -2,6 +2,9 @@
 // WARNING: The contents of this file are auto-generated
 
 
+$mod_strings['LBL_ACCOUNTS_SUBPANEL'] = 'Accounts';
+
+
 
 $mod_strings['LBL_ACCOUNT'] = 'Related Account';
 $mod_strings['LBL_OPPORTUNITY'] = 'Related Opportunity';
