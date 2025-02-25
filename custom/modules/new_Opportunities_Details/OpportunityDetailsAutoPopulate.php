@@ -1,7 +1,5 @@
 <?php
 
-// File: custom/modules/New_Opportunities_Details/OpportunityDetailsAutoPopulate.php
-
 if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 
 class OpportunityDetailsAutoPopulate
@@ -9,10 +7,6 @@ class OpportunityDetailsAutoPopulate
 
     public function populateFields($bean, $event, $arguments)
     {
-        // Skip if this is coming from an import
-        if (!empty($bean->is_import)) {
-            return;
-        }
 
         // Only proceed if we have a related opportunity
         if (!empty($bean->opportunity_id)) {
@@ -20,15 +14,6 @@ class OpportunityDetailsAutoPopulate
             $opportunity = BeanFactory::getBean('Opportunities', $bean->opportunity_id);
 
             if ($opportunity) {
-                // Set the assigned user from the opportunity
-//                $bean->assigned_user_id = $opportunity->assigned_user_id;
-//
-//                // Populate other fields from opportunity
-//                $bean->sales_stage = $opportunity->sales_stage;
-//                $bean->probability = $opportunity->probability;
-//                $bean->amount = $opportunity->amount;
-
-                // Generate the name field according to the specified logic
                 $this->generateName($bean);
             }
         }
