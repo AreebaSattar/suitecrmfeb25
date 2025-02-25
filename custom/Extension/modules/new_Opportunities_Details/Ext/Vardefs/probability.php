@@ -16,6 +16,14 @@ $dictionary['new_Opportunities_Details']['fields']['amount'] = array(
     'reportable' => true,
     'importable' => 'true',
 );
+$dictionary['new_Opportunities_Details']['fields']['sales_stage'] = array(
+    'name' => 'sales_stage',
+    'vname' => 'LBL_SALES_STAGE',
+    'type' => 'dropdown',
+    'required' => false,
+    'reportable' => true,
+    'importable' => 'true',
+);
 
 $dictionary['new_Opportunities_Details']['fields']['opportunity_name'] = array(
     'name' => 'opportunity_name',
