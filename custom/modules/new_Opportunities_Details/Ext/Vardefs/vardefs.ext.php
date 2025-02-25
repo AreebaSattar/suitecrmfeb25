@@ -143,4 +143,36 @@ $dictionary['new_Opportunities_Details']['fields']['new_brands'] = array(
     'vname' => 'LBL_NEW_BRANDS',
     'module' => 'new_BRANDS',
 );
+
+$dictionary['new_Opportunities_Details']['fields']['probability'] = array(
+    'name' => 'probability',
+    'vname' => 'LBL_PROBABILITY',
+    'type' => 'varchar',
+    'required' => false,
+    'reportable' => true,
+);
+$dictionary['new_Opportunities_Details']['fields']['amount'] = array(
+    'name' => 'amount',
+    'vname' => 'LBL_AMOUNT',
+    'type' => 'decimal',
+    'len' => '18,2',
+    'precision' => 2,
+    'required' => false,
+    'reportable' => true,
+    'importable' => 'true',
+);
+
+$dictionary['new_Opportunities_Details']['fields']['opportunity_name'] = array(
+    'name' => 'opportunity_name',
+    'rname' => 'name',
+    'id_name' => 'opportunity_id',
+    'vname' => 'LBL_OPPORTUNITY_NAME',
+    'type' => 'relate',
+    'link' => 'opportunities_link',
+    'table' => 'opportunities',
+    'module' => 'Opportunities',
+    'source' => 'non-db',
+);
+
+
 ?>
