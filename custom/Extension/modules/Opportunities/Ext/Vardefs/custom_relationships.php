@@ -1,7 +1,4 @@
-<?php 
- //WARNING: The contents of this file are auto-generated
-
-
+<?php
 $dictionary['Opportunities']['relationships']['new_opportunities_details_opportunities'] = array(
     'lhs_module' => 'Opportunities',
     'lhs_table' => 'opportunities',
@@ -19,25 +16,3 @@ $dictionary['Opportunities']['fields']['new_opportunities_details_link'] = array
     'source' => 'non-db',
     'vname' => 'LBL_NEW_OPPORTUNITIES_DETAILS',
 );
-
-
- // created: 2025-02-24 20:13:57
-$dictionary['Opportunity']['fields']['jjwg_maps_address_c']['inline_edit']=1;
-
- 
-
- // created: 2025-02-24 20:13:57
-$dictionary['Opportunity']['fields']['jjwg_maps_geocode_status_c']['inline_edit']=1;
-
- 
-
- // created: 2025-02-24 20:13:57
-$dictionary['Opportunity']['fields']['jjwg_maps_lat_c']['inline_edit']=1;
-
- 
-
- // created: 2025-02-24 20:13:57
-$dictionary['Opportunity']['fields']['jjwg_maps_lng_c']['inline_edit']=1;
-
- 
-?>
