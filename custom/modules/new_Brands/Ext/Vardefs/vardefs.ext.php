@@ -119,6 +119,18 @@ $dictionary['new_Brands']['fields']['market_region'] = array(
 );
 
 
+// created: 2025-02-26 15:39:12
+$dictionary["new_Brands"]["fields"]["new_brands_opportunities_1"] = array(
+    'name' => 'new_brands_opportunities_1',
+    'type' => 'link',
+    'relationship' => 'new_brands_opportunities_1',
+    'source' => 'non-db',
+    'module' => 'Opportunities',
+    'bean_name' => 'Contact',
+    'vname' => 'LBL_NEW_BRANDS_OPPORTUNITIES_1_FROM_OPPORTUNITIES_TITLE',
+);
+
+
 $dictionary['new_Brands']['fields']['accounts'] = array(
     'name' => 'accounts',
     'type' => 'link',
@@ -128,4 +140,15 @@ $dictionary['new_Brands']['fields']['accounts'] = array(
     'source' => 'non-db',
     'vname' => 'LBL_ACCOUNTS',
 );
+
+//$dictionary["new_Brands"]["fields"]["opportunities_brands"] = array(
+//    'name' => 'opportunities_brands',
+//    'type' => 'link',
+//    'relationship' => 'opportunities_brands',
+//    'module' => 'Opportunities',
+//    'bean_name' => 'Opportunity',
+//    'source' => 'non-db',
+//    'vname' => 'LBL_OPPORTUNITIES',
+//);
+
 ?>

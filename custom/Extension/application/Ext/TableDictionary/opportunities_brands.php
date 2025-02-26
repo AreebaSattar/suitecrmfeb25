@@ -1,11 +1,4 @@
-<?php 
- //WARNING: The contents of this file are auto-generated
-
-
-include('custom/metadata/new_brands_opportunities_1MetaData.php');
-
-
-
+<?php
 //include('custom/metadata/opportunities_brandsMetaData.php');
 ////$dictionary["new_brands_opportunities"] = array(
 ////    'table' => 'new_brands_opportunities_c',
@@ -22,4 +15,3 @@ include('custom/metadata/new_brands_opportunities_1MetaData.php');
 ////        array('name' => 'new_brands_opportunities_idb2', 'type' => 'index', 'fields' => array('opportunities_id')),
 ////    ),
 ////);
-?>

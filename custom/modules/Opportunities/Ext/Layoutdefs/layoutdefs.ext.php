@@ -2,30 +2,15 @@
  //WARNING: The contents of this file are auto-generated
 
 
-$layout_defs["new_Brands"]["subpanel_setup"]['accounts'] = array(
-    'order' => 10,
-    'module' => 'Accounts',
-    'subpanel_name' => 'default',
-    'sort_order' => 'asc',
-    'sort_by' => 'name',
-    'title_key' => 'LBL_ACCOUNTS',
-    'get_subpanel_data' => 'accounts',
-    'top_buttons' => array(
-        array('widget_class' => 'SubPanelTopCreateButton'),
-        array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
-    ),
-);
-
-
 
 // created: 2025-02-26 15:39:12
-$layout_defs["new_Brands"]["subpanel_setup"]['new_brands_opportunities_1'] = array(
+$layout_defs["Opportunities"]["subpanel_setup"]['new_brands_opportunities_1'] = array(
     'order' => 100,
-    'module' => 'Opportunities',
+    'module' => 'new_Brands',
     'subpanel_name' => 'default',
     'sort_order' => 'asc',
     'sort_by' => 'id',
-    'title_key' => 'LBL_NEW_BRANDS_OPPORTUNITIES_1_FROM_OPPORTUNITIES_TITLE',
+    'title_key' => 'LBL_NEW_BRANDS_OPPORTUNITIES_1_FROM_NEW_BRANDS_TITLE',
     'get_subpanel_data' => 'new_brands_opportunities_1',
     'top_buttons' =>
         array(
@@ -41,17 +26,19 @@ $layout_defs["new_Brands"]["subpanel_setup"]['new_brands_opportunities_1'] = arr
         ),
 );
 
-//$layout_defs["new_Brands"]["subpanel_setup"]["opportunities_brands"] = array(
+//$layout_defs["Opportunities"]["subpanel_setup"]["opportunities_brands"] = array(
 //    'order' => 10,
-//    'module' => 'Opportunities',
+//    'module' => 'new_Brands',
 //    'subpanel_name' => 'default',
 //    'sort_order' => 'asc',
 //    'sort_by' => 'name',
-//    'title_key' => 'LBL_OPPORTUNITIES_SUBPANEL_TITLE',
+//    'title_key' => 'LBL_NEW_BRANDS_SUBPANEL_TITLE',
 //    'get_subpanel_data' => 'opportunities_brands',
 //    'top_buttons' => array(
 //        array('widget_class' => 'SubPanelTopButtonQuickCreate'),
 //        array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
 //    ),
 //);
+//
+
 ?>
