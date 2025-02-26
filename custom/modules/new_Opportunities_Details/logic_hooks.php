@@ -8,16 +8,16 @@ $hook_array['after_save'][] = array(
     'populateAssignedUser'
 );
 $hook_array['before_save'][] = array(
-    1, // Processing index
-    'Auto-populate fields from Opportunity', // Description
-    'custom/modules/New_Opportunities_Details/OpportunityDetailsAutoPopulate.php', // File path to the custom PHP file
-    'OpportunityDetailsAutoPopulate', // Class name
-    'populateFields' // Method name
+    1,
+    'Auto-populate fields from Opportunity',
+    'custom/modules/New_Opportunities_Details/OpportunityDetailsAutoPopulate.php',
+    'OpportunityDetailsAutoPopulate',
+    'populateFields'
 );
 $hook_array['before_save'][] = array(
-    1, // Processing index
-    'Check Account or Lead', // Description
-    'custom/modules/New_Opportunities_Details/AccountOrLeadValidator.php', // PHP file
-    'AccountOrLeadValidator', // Class name
-    'validateFields' // Method name
+    1,
+    'Check Account or Lead',
+    'custom/modules/New_Opportunities_Details/AccountOrLeadValidator.php',
+    'AccountOrLeadValidator',
+    'validateFields'
 );

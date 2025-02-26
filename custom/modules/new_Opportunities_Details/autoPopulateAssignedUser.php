@@ -9,7 +9,6 @@ class autoPopulateAssignedUser {
                 if ($bean->assigned_user_id != $opportunity->assigned_user_id) {
                     $bean->assigned_user_id = $opportunity->assigned_user_id;
                     $bean->save();
-
                 }
             }
         }

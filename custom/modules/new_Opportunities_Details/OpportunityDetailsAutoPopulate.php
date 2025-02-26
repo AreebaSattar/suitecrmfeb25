@@ -8,8 +8,6 @@ class OpportunityDetailsAutoPopulate
 
     public function populateFields($bean, $event, $arguments)
     {
-
-
         // Only proceed if we have a related opportunity
         if (!empty($bean->opportunity_id)) {
             // Load the related opportunity
@@ -22,8 +20,7 @@ class OpportunityDetailsAutoPopulate
         }
     }
 
-    /**
-     * Generate the name field based on the specified logic:
+    /**Generate the name field based on the specified logic:
      * name = Opportunity - Account - Brand
      * If account is empty and lead is selected, use lead instead
      */
@@ -47,7 +44,7 @@ class OpportunityDetailsAutoPopulate
                 $nameParts[] = $account->name;
             }
         } elseif (!empty($bean->lead_id)) {
-            // Lead is selected (and account is not)
+            // Lead is selected and account is not
             $lead = BeanFactory::getBean('Leads', $bean->lead_id);
             if ($lead) {
                 $nameParts[] = trim($lead->first_name . ' ' . $lead->last_name);

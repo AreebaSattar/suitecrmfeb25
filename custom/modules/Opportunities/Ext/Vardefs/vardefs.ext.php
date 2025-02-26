@@ -21,6 +21,18 @@ $dictionary['Opportunities']['fields']['new_opportunities_details_link'] = array
 );
 
 
+
+// Define the link field for the Opportunity side
+$dictionary['Opportunity']['fields']['brands'] = array(
+    'name' => 'brands',
+    'type' => 'link',
+    'relationship' => 'opportunities_brands',
+    'module' => 'new_Brands',
+    'bean_name' => 'new_Brands',
+    'source' => 'non-db',
+    'vname' => 'LBL_BRANDS',
+);
+
  // created: 2025-02-24 20:13:57
 $dictionary['Opportunity']['fields']['jjwg_maps_address_c']['inline_edit']=1;
 
