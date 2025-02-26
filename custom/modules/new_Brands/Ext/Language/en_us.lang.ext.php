@@ -17,6 +17,7 @@ $mod_strings['LBL_OPPORTUNITIES'] = 'Opportunities';
 $mod_strings['LBL_ACCOUNTS'] = 'Accounts';
 
 
+<<<<<<< HEAD
 
 $mod_strings['LBL_OPPORTUNITIES_SUBPANEL_TITLE'] = 'Opportunities';
 $mod_strings['LBL_OPPORTUNITIES'] = 'Opportunities';
@@ -25,3 +26,8 @@ $mod_strings['LBL_NEW_BRANDS_OPPORTUNITIES_1_FROM_NEW_BRANDS_TITLE'] = 'Brands';
 
 //
 //$mod_strings['LBL_OPPORTUNITIES'] = 'Opportunities';
+=======
+// Language labels for Brand module
+$mod_strings['LBL_OPPORTUNITIES'] = 'Opportunities';
+$mod_strings['LBL_OPPORTUNITIES_BRANDS'] = 'Opportunities';
+>>>>>>> f809adc43176ebd3db448b87192213a2974e1a46

@@ -18,6 +18,7 @@ $layout_defs["new_Brands"]["subpanel_setup"]['accounts'] = array(
 
 
 
+<<<<<<< HEAD
 // created: 2025-02-26 15:39:12
 $layout_defs["new_Brands"]["subpanel_setup"]['new_brands_opportunities_1'] = array(
     'order' => 100,
@@ -54,4 +55,21 @@ $layout_defs["new_Brands"]["subpanel_setup"]['new_brands_opportunities_1'] = arr
 //        array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
 //    ),
 //);
+=======
+// Define subpanel for opportunities on brand detail view
+$layout_defs["new_Brands"]["subpanel_setup"]['opportunities'] = array(
+    'order' => 20,
+    'module' => 'Opportunities',
+    'subpanel_name' => 'default',
+    'sort_order' => 'asc',
+    'sort_by' => 'name',
+    'title_key' => 'LBL_OPPORTUNITIES',
+    'get_subpanel_data' => 'opportunities',
+    'top_buttons' => array(
+        array('widget_class' => 'SubPanelTopCreateButton'),
+        array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
+    ),
+);
+
+>>>>>>> f809adc43176ebd3db448b87192213a2974e1a46
 ?>
