@@ -1,11 +1,33 @@
 <?php
-
-
-if (!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
-
-class OpportunityDetailsAutoPopulate
+class OpportunityDetailsHooks
 {
+    function populateAssignedUser($bean, $event, $arguments) {
+        // Ensure opportunity_id exists
+        if (!empty($bean->opportunity_id)) {
+            $opportunity = BeanFactory::getBean('Opportunities', $bean->opportunity_id);
 
+            if (!empty($opportunity->assigned_user_id)) {
+                if ($bean->assigned_user_id != $opportunity->assigned_user_id) {
+                    $bean->assigned_user_id = $opportunity->assigned_user_id;
+                    $bean->save();
+                }
+            }
+        }
+    }
+    function populateAccount($bean, $event, $arguments)
+    {
+        global $log;
+        // opportunity_id exists before proceeding
+        if (!empty($bean->opportunity_id)) {
+            $opportunity = BeanFactory::getBean('Opportunities', $bean->opportunity_id);
+            // Populate account_id from Opportunity
+            if (!empty($opportunity->account_id)) {
+                if ($bean->account_id != $opportunity->account_id) {
+                    $bean->account_id = $opportunity->account_id;
+                }
+            }
+        }
+    }
     public function populateFields($bean, $event, $arguments)
     {
         // Only proceed if we have a related opportunity
@@ -63,3 +85,4 @@ class OpportunityDetailsAutoPopulate
         }
     }
 }
+

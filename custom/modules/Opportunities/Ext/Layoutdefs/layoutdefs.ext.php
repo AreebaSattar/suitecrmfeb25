@@ -2,9 +2,21 @@
  //WARNING: The contents of this file are auto-generated
 
 
-<<<<<<< HEAD
+// Define subpanel for brands on opportunity detail view
+$layout_defs["Opportunity"]["subpanel_setup"]['brands'] = array(
+    'order' => 20,
+    'module' => 'new_Brands',
+    'subpanel_name' => 'default',
+    'sort_order' => 'asc',
+    'sort_by' => 'name',
+    'title_key' => 'LBL_BRANDS',
+    'get_subpanel_data' => 'brands',
+    'top_buttons' => array(
+        array('widget_class' => 'SubPanelTopCreateButton'),
+        array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
+    ),
+);
 
-// created: 2025-02-26 15:39:12
 $layout_defs["Opportunities"]["subpanel_setup"]['new_brands_opportunities_1'] = array(
     'order' => 100,
     'module' => 'new_Brands',
@@ -26,36 +38,4 @@ $layout_defs["Opportunities"]["subpanel_setup"]['new_brands_opportunities_1'] = 
                 ),
         ),
 );
-
-//$layout_defs["Opportunities"]["subpanel_setup"]["opportunities_brands"] = array(
-//    'order' => 10,
-//    'module' => 'new_Brands',
-//    'subpanel_name' => 'default',
-//    'sort_order' => 'asc',
-//    'sort_by' => 'name',
-//    'title_key' => 'LBL_NEW_BRANDS_SUBPANEL_TITLE',
-//    'get_subpanel_data' => 'opportunities_brands',
-//    'top_buttons' => array(
-//        array('widget_class' => 'SubPanelTopButtonQuickCreate'),
-//        array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
-//    ),
-//);
-//
-
-=======
-// Define subpanel for brands on opportunity detail view
-$layout_defs["Opportunity"]["subpanel_setup"]['brands'] = array(
-    'order' => 20,
-    'module' => 'new_Brands',
-    'subpanel_name' => 'default',
-    'sort_order' => 'asc',
-    'sort_by' => 'name',
-    'title_key' => 'LBL_BRANDS',
-    'get_subpanel_data' => 'brands',
-    'top_buttons' => array(
-        array('widget_class' => 'SubPanelTopCreateButton'),
-        array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
-    ),
-);
->>>>>>> f809adc43176ebd3db448b87192213a2974e1a46
 ?>

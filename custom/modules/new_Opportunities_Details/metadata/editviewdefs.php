@@ -21,11 +21,11 @@ $viewdefs['new_Opportunities_Details']['EditView'] = array(
                 ),
             ),
             array(
-                array(
-                    'name' => 'account_name',
-                    'label' => 'LBL_ACCOUNT_NAME',
-                    'required' => false,
-                ),
+//                array(
+//                    'name' => 'account_name',
+//                    'label' => 'LBL_ACCOUNT_NAME',
+//                    'required' => false,
+//                ),
                 array(
                     'name' => 'lead_name',
                     'label' => 'LBL_LEAD_NAME',
