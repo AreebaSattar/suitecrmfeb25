@@ -3,6 +3,17 @@
 
 
 
+$dictionary['new_Brands']['fields']['accounts'] = array(
+    'name' => 'accounts',
+    'type' => 'link',
+    'relationship' => 'new_brands_accounts',
+    'source' => 'non-db',
+    'vname' => 'LBL_ACCOUNTS',
+    'module' => 'Accounts',
+);
+
+
+
 
 $dictionary['new_Brands']['fields']['brand_logo'] = array(
     'name' => 'brand_logo',
@@ -136,17 +147,6 @@ $dictionary['new_Brands']['fields']['opportunity_id'] = array(
     'duplicate_merge' => 'disabled',
 );
 
-
-
-$dictionary['new_Brands']['fields']['accounts'] = array(
-    'name' => 'accounts',
-    'type' => 'link',
-    'relationship' => 'brand_accounts',
-    'module' => 'Accounts',
-    'bean_name' => 'Account',
-    'source' => 'non-db',
-    'vname' => 'LBL_ACCOUNTS',
-);
 
 
 

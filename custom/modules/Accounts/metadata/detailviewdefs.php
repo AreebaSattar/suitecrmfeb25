@@ -188,7 +188,7 @@ array(
           ),
             1 =>
                 array(
-                    'name' => 'brand_name',
+                    'name' => 'new_brand_name',
                 ),
         ),
       ),

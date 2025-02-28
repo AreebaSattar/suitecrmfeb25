@@ -2,8 +2,9 @@
  //WARNING: The contents of this file are auto-generated
 
 
-$layout_defs["new_Brands"]["subpanel_setup"]['accounts'] = array(
-    'order' => 10,
+
+$layout_defs['new_Brands']['subpanel_setup']['accounts'] = array(
+    'order' => 100,
     'module' => 'Accounts',
     'subpanel_name' => 'default',
     'sort_order' => 'asc',
@@ -11,7 +12,7 @@ $layout_defs["new_Brands"]["subpanel_setup"]['accounts'] = array(
     'title_key' => 'LBL_ACCOUNTS',
     'get_subpanel_data' => 'accounts',
     'top_buttons' => array(
-        array('widget_class' => 'SubPanelTopCreateButton'),
+        array('widget_class' => 'SubPanelTopButtonQuickCreate'),
         array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
     ),
 );

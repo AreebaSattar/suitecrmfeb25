@@ -2,48 +2,35 @@
  //WARNING: The contents of this file are auto-generated
 
 
-// Define fields for the Account side of the relationship
-$dictionary['Account']['fields']['brand_id'] = array(
-    'name' => 'brand_id',
+
+$dictionary['Account']['fields']['new_brand_id'] = array(
+    'name' => 'new_brand_id',
     'type' => 'id',
-    'vname' => 'LBL_BRAND_ID',
+    'vname' => 'LBL_NEW_BRAND_ID',
     'required' => false,
-    'reportable' => true,
-    'comment' => 'ID of the associated brand',
+    'reportable' => false,
+    'massupdate' => false,
+    'duplicate_merge' => 'disabled',
 );
 
-$dictionary['Account']['fields']['brand_name'] = array(
-    'name' => 'brand_name',
+$dictionary['Account']['fields']['new_brand_name'] = array(
+    'name' => 'new_brand_name',
     'type' => 'relate',
     'source' => 'non-db',
-    'vname' => 'LBL_BRAND_NAME',
-    'save' => true,
-    'id_name' => 'brand_id',
-    'link' => 'brand_link',
-    'table' => 'new_brands',
+    'vname' => 'LBL_NEW_BRAND',
+    'id_name' => 'new_brand_id',
     'module' => 'new_Brands',
-    'rname' => 'name',
+    'link' => 'new_brand_link',
 );
 
-$dictionary['Account']['fields']['brand_link'] = array(
-    'name' => 'brand_link',
+$dictionary['Account']['fields']['new_brand_link'] = array(
+    'name' => 'new_brand_link',
     'type' => 'link',
-    'relationship' => 'brand_accounts',
+    'relationship' => 'new_brands_accounts',
     'source' => 'non-db',
-    'vname' => 'LBL_BRAND',
-    'module' => 'new_Brands',
+    'vname' => 'LBL_NEW_BRAND',
 );
 
-// Define the relationship from Account perspective
-$dictionary['Account']['relationships']['brand_accounts'] = array(
-    'lhs_module' => 'new_Brands',
-    'lhs_table' => 'new_brands',
-    'lhs_key' => 'id',
-    'rhs_module' => 'Accounts',
-    'rhs_table' => 'accounts',
-    'rhs_key' => 'brand_id',
-    'relationship_type' => 'one-to-many',
-);
 
 
 

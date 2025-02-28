@@ -182,7 +182,7 @@ $viewdefs ['Accounts'] =
                                     array(
                                         0 =>
                                             array(
-                                                'name' => 'brand_name',
+                                                'name' => 'new_brand_name',
                                             ),
                                     ),
                             ),
