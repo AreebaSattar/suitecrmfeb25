@@ -21,16 +21,6 @@ $dictionary['Opportunities']['fields']['new_opportunities_details_link'] = array
 );
 
 
-$dictionary["Opportunity"]["fields"]["new_brands_opportunities_1"] = array(
-    'name' => 'new_brands_opportunities_1',
-    'type' => 'link',
-    'relationship' => 'new_brands_opportunities_1',
-    'source' => 'non-db',
-    'module' => 'new_Brands',
-    'bean_name' => 'new_Brands',
-    'vname' => 'LBL_NEW_BRANDS_OPPORTUNITIES_1_FROM_NEW_BRANDS_TITLE',
-);
-
  // created: 2025-02-24 20:13:57
 $dictionary['Opportunity']['fields']['jjwg_maps_address_c']['inline_edit']=1;
 
