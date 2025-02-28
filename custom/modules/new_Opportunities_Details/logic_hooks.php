@@ -1,6 +1,6 @@
 <?php
 
-$hook_array['after_save'][] = array(
+$hook_array['before_save'][] = array(
     1,
     'Auto-populate Assigned User from Opportunity',
     'custom/modules/new_Opportunities_Details/OpportunityDetailsHooks.php',

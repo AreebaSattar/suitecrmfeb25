@@ -40,19 +40,11 @@ $layout_defs["new_Brands"]["subpanel_setup"]['new_brands_opportunities_1'] = arr
 );
 
 
-// Define subpanel for opportunities on brand detail view
-$layout_defs["new_Brands"]["subpanel_setup"]['opportunities'] = array(
-    'order' => 20,
-    'module' => 'Opportunities',
+$layout_defs['new_Brands']['subpanel_setup']['new_opportunities_details'] = array(
+    'order' => 100,
+    'module' => 'new_Opportunities_Details',
     'subpanel_name' => 'default',
-    'sort_order' => 'asc',
-    'sort_by' => 'name',
-    'title_key' => 'LBL_OPPORTUNITIES',
-    'get_subpanel_data' => 'opportunities',
-    'top_buttons' => array(
-        array('widget_class' => 'SubPanelTopCreateButton'),
-        array('widget_class' => 'SubPanelTopSelectButton', 'mode' => 'MultiSelect'),
-    ),
+    'title_key' => 'LBL_NEW_OPPORTUNITIES_DETAILS_SUBPANEL',
+    'get_subpanel_data' => 'new_opportunities_details',
 );
-
 ?>

@@ -29,5 +29,5 @@ $dictionary['new_Opportunities_Details']['fields']['new_brands'] = array(
     'relationship' => 'new_brands_new_opportunities_details',
     'source' => 'non-db',
     'vname' => 'LBL_NEW_BRANDS',
-    'module' => 'new_BRANDS',
+    'module' => 'new_Brands',
 );
